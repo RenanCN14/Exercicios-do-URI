@@ -1,0 +1,15 @@
+def perfeito(numero):
+    soma = 0
+    for i in range(numero-1):
+        if numero % (i+1) == 0:
+            soma = soma+(i+1)
+    return soma
+
+
+testes = int(input())
+for i in range(testes):
+    numero = int(input())
+    if numero == perfeito(numero):
+        print(f"{numero} eh perfeito")
+    else:
+        print(f"{numero} nao eh perfeito")
