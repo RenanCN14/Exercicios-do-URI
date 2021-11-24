@@ -1,0 +1,5 @@
+testes = int(input())
+cont = 1
+for i in range(testes):
+    print(f"{cont} {cont**2} {(cont**2)*cont}")
+    cont+=1
