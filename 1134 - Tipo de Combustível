@@ -1,0 +1,21 @@
+alc = 0
+gas = 0
+die = 0
+
+while True:
+    while True:
+        cod = int(input())
+        if cod in [1,2,3,4]:
+            break
+    if cod == 1:
+        alc += 1
+    elif cod == 2:
+        gas += 1
+    elif cod == 3:
+        die += 1
+    elif cod == 4:
+        print("MUITO OBRIGADO")
+        print(f"Alcool: {alc}")
+        print(f"Gasolina: {gas}")
+        print(f"Diesel: {die}")
+        exit()
