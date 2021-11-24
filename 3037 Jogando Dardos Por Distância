@@ -1,0 +1,16 @@
+testes = int(input())
+joao = 0
+maria = 0
+for i in range(testes):
+    for a in range(3):
+        d, x = map(int, input().split())
+        joao += (d*x)
+    for a in range(3):
+        d, x = map(int, input().split())
+        maria += (d*x)
+    if joao > maria:
+        print("JOAO")
+    elif maria >joao:
+        print("MARIA")
+    joao = 0
+    maria = 0
