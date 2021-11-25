@@ -1,0 +1,11 @@
+tamanho = int(input())
+cont = 0
+branca = 0
+preta = 0
+for i in range(tamanho*tamanho):
+    if cont%2 == 0:
+        branca +=1
+    else:
+        preta+=1
+    cont+=1
+print(f"{branca} casas brancas e {preta} casas pretas")
