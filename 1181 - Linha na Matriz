@@ -1,0 +1,36 @@
+def cria_tabuleiro(tamanho):
+    tabuleiro = []
+    for coluna in range(tamanho):
+        matriz_temp = []
+        for linha in range(tamanho):
+            matriz_temp.append(" ")
+        tabuleiro.append(matriz_temp)
+    return tabuleiro
+
+matriz = cria_tabuleiro(12)
+
+linha = int(input())
+operacao = input()
+contc = 0
+contl = 0
+acu = 0
+for i in range(144):
+    valor = float(input())
+    matriz[contl][contc] = valor
+    contc += 1
+    if contc == 12:
+        contc = 0
+        contl += 1
+cont = 0
+if operacao == "S":
+    for i in range(12):
+        acu += matriz[linha][cont]
+        cont += 1
+    print(f"{acu:.1f}")
+cont = 0
+acu = 0
+if operacao == "M":
+    for i in range(12):
+        acu += matriz[linha][cont]
+        cont += 1
+    print(f"{acu/12:.1f}")
