@@ -1,0 +1,19 @@
+lista = []
+def fibo(numero, lista):
+    lista.append(0)
+    lista.append(1)
+    acu = 0
+    acu2 = 1
+    for i in range(numero):
+        result = acu + acu2
+        acu = acu2
+        acu2 = result
+        lista.append(result)
+    return lista
+lista = fibo(60,lista)
+
+
+testes = int(input())
+for i in range(testes):
+    valor = int(input())
+    print(f"Fib({valor}) = {lista[valor]}")
