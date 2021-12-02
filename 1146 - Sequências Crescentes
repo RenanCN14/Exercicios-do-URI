@@ -1,0 +1,11 @@
+while True:
+    cont = 0
+    var = int(input())
+    if var == 0:
+        break
+    for i in range(var):
+        if not cont == var-1:
+            print(i+1, end=" ")
+            cont += 1
+        else:
+            print(i+1)
